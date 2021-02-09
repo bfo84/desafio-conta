@@ -1,0 +1,12 @@
+###############
+#PRIMEIRAMENTE
+###############
+
+Criar o banco de dados contas-recebimento no PostgreSQL
+
+###############
+#RODE APLICACAO
+***************
+
+Para rodar a aplicação, execute a classe Application.java, ela irá gerar automaticamente através
+das configurações do flyway no arquivo application-hml.properties os scripts de banco. Verifique se o usuário e a senha são os mesmos do seu banco de dados tanto para o datasource quanto para as configurações do flyway. 

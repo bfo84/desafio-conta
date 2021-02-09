@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "66dcf1f0-4b6f-4cbb-9b8d-b8d7e509f902",
+		"name": "Deliverit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/contas-recebimento/conta/pagarConta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Conta de Luz\",\r\n    \"dataVencimento\": \"2021-02-05T17:45:55.9483536\",\r\n    \"dataPagamento\": \"2021-02-05T17:45:55.9483536\",\r\n    \"valorOriginal\": 2500.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/contas-recebimento/conta/pagarConta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contas-recebimento",
+						"conta",
+						"pagarConta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/contas-recebimento/conta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/contas-recebimento/conta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"contas-recebimento",
+						"conta"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
